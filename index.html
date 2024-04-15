@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto de Viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Presupuesto de Viaje</strong></h1>
+        <form id="travelForm">
+            <div class="form-group">
+                <label for="destination"><b>Destino:</b</label>
+                <input type="text" id="destination" name="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="duration"><b>Duración de la estadía (días):</b></label>
+                <input type="number" id="duration" name="duration" required>
+            </div>
+            <div class="form-group">
+                <label for="hotelCost"><b>Costo del hotel por noche:</b></label>
+                <input type="number" id="hotelCost" name="hotelCost" required>
+            </div>
+            <div class="form-group">
+                <label for="transportCost"><b>Costo del transporte:</b></label>
+                <input type="number" id="transportCost" name="transportCost" required>
+            </div>
+            <div class="form-group">
+                <label for="excursionCost"><b>Costo de las excursiones:</b></label>
+                <input type="number" id="excursionCost" name="excursionCost" required>
+            </div>
+            <div class="form-group">
+                <label for="excursionCost"><b>Costo de comidas</b></label>
+                <input type="number" id="comidasCost" name="excursionCost" required>
+            </div>
+            <button type="submit"><b>Calcular Presupuesto</b></button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
+</body>
+</html>
