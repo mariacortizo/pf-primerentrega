@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presupuesto de Viaje</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1><strong>Presupuesto de Viaje</strong></h1>
         <form id="travelForm">
             <div class="form-group">
-                <label for="destination"><b>Destino:</b</label>
-                <input type="text" id="destination" name="destination" required>
+                <label for="destination"><b>Destino:</b></label>
+                <input type="text" id="destination" name="destination" required placeholder="Ingrese un destino">
             </div>
             <div class="form-group">
                 <label for="duration"><b>Duración de la estadía (días):</b></label>
@@ -24,21 +24,28 @@
                 <input type="number" id="hotelCost" name="hotelCost" required>
             </div>
             <div class="form-group">
+                <label for="transportType"><b>Tipo de transporte:</b></label>
+                <select id="transportType" name="transportType">
+                    <option value="Avión">Avión</option>
+                    <option value="Tren">Tren</option>
+                    <option value="Autobús">Autobús</option>
+                    <option value="Coche">Coche</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="transportCost"><b>Costo del transporte:</b></label>
                 <input type="number" id="transportCost" name="transportCost" required>
             </div>
             <div class="form-group">
-                <label for="excursionCost"><b>Costo de las excursiones:</b></label>
-                <input type="number" id="excursionCost" name="excursionCost" required>
+                <label for="comidasCost"><b>Costo de comidas diarias:</b></label>
+                <input type="number" id="comidasCost" name="comidasCost" required>
             </div>
             <div class="form-group">
-                <label for="excursionCost"><b>Costo de comidas</b></label>
-                <input type="number" id="comidasCost" name="excursionCost" required>
+                <label for="excursionCost"><b>Costo de excursiones:</b></label>
+                <input type="number" id="excursionCost" name="excursionCost" required>
             </div>
-            <button type="submit"><b>Calcular Presupuesto</b></button>
+            <button type="submit">Calcular Presupuesto</button>
         </form>
-        <div id="result"></div>
     </div>
-    
 </body>
 </html>
